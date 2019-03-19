@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+     <meta charset="utf-8">
+	 <title>Тест 7</title>
+	 <link rel="stylesheet" href="../test.css">
+	 <link rel="shortcut icon" href="../../img/favicon.ico">
+	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+     <script type="text/javascript">
+     $(function() {
+     $(window).scroll(function() {
+     if($(this).scrollTop() != 0) {
+     $('#toTop').fadeIn();
+     } else {
+     $('#toTop').fadeOut();
+     }
+     });
+     $('#toTop').click(function() {
+     $('body,html').animate({scrollTop:0},800);});});
+     </script>
+   </head>
+   <body>
+     <div class="background"></div>
+     <div class="logo">
+	    <a href="../../index.html" class="logo_link"><img src="../../img/logo.png" class="logo_img"></a>
+	  </div>
+	  
+	  <div class="line">
+	  </div>
+	  
+	  <div class="panel">
+	    <div class="panel_full">
+		  <ul class="panel_full_menu">
+		    <li class="panel_full_menu_list"><a  href="../../index.html" class="panel_full_menu_link">На главную</a></li>
+			<li class="panel_full_menu_list"><a  href="../../theory.html" class="panel_full_menu_link">Теория</a></li>
+			<li class="panel_full_menu_list"><a href="../../add_material.html" class="panel_full_menu_link">Доп.Матер</a></li>
+			<li class="panel_full_menu_list"><a href="../../tests.html"" class="panel_full_menu_link">Тесты</li></a>
+			<li class="panel_full_menu_list"><a href="../../practice.html" class="panel_full_menu_link">Практические</li></a>
+			<li class="panel_full_menu_list"><a href="../../about_us.html" class="panel_full_menu_link">О нас</li></a>
+		  </ul>
+		</div>
+	  </div>
+	    <div class="test">
+	    <form method="post">
+		  <input class="btn" id="name" placeholder="Ваше имя" required>
+		  <input class="btn" id="fullname" placeholder="Ваша фамилия" required>
+		  <div class="choice"> 
+		   <p>1. Наука о небесных светила, о законах их движения, строения и развития, а также о строении и развитии Вселенной в целом называется …</p>
+		   <input class="margin" id="radio_1" type="radio" value="0" name="a">
+		   <label for="radio_1"> 1.Астрометрия</label></br>
+		   <input class="margin" id="radio_2" type="radio" value="0" name="a">
+		   <label for="radio_2"> 2.Астрофизиика</label></br>
+		   <input class="margin" id="radio_3" type="radio" value="1" name="a">
+		   <label for="radio_3"> 3.Астрономия</label></br>
+		   <input class="margin" id="radio_4" type="radio" value="0" name="a">
+		   <label for="radio_4"> 4.Другой ответ</label></br>
+		  </div> 
+		  
+		  <div class="choice"> 
+		   <p>2.Гелиоцентричну модель мира разработал …</p>
+		   <input id="radio_5" type="radio" value="0" name="b">
+		   <label for="radio_5"> 1. Хаббл Эдвин</label></br>
+		   <input id="radio_6" type="radio" value="1" name="b">
+		   <label for="radio_6"> 2. Николай Коперник</label></br>
+		   <input id="radio_7" type="radio" value="0" name="b">
+		   <label for="radio_7"> 3. Тихо Браге</label></br>
+		   <input id="radio_8" type="radio" value="0" name="b">
+		   <label for="radio_8"> 4. Клавдий Птолемей</label></br>
+		  </div> 
+		  
+		  <div class="choice"> 
+		   <p>3.до планет земной группы относятся …</p>
+		   <input id="radio_9" type="radio" value="0" name="c">
+		   <label for="radio_9"> 1. Меркурий, Венера, Уран, Земля</label>
+		   <input id="radio_10" type="radio" value="1" name="c"></br>
+		   <label for="radio_10"> 2. Марс, Земля, Венера, Меркурий </label>
+		   <input id="radio_11" type="radio" value="0" name="c"></br>
+		   <label for="radio_11"> 3. Венера, Земля, Меркурий, Фобос</label>
+		   <input id="radio_12" type="radio" value="0" name="c"></br>
+		   <label for="radio_12"> 4. Меркурий, Земля, Марс, Юпитер</label>
+		  </div> 
+		  
+		  <div class="choice"> 
+		   <p>4.Второй от Солнца планета называется …</p>
+		   <input id="radio_13" type="radio" value="1" name="d">
+		   <label for="radio_13"> 1. Венера</label></br>
+		   <input id="radio_14" type="radio" value="0" name="d">
+		   <label for="radio_14"> 2. Меркурий</label></br>
+		   <input id="radio_15" type="radio" value="0" name="d">
+		   <label for="radio_15"> 3. Земля</label></br>
+		   <input id="radio_16" type="radio" value="0" name="d">
+		   <label for="radio_16"> 4. Марс</label></br>
+		  </div> 
+		  
+		  <div class="choice"> 
+		   <p>5. Межзвездное пространство …</p>
+		   <input id="radio_17" type="radio" value="0" name="e">
+		   <label for="radio_17"> 1. незаполненный ничем </label></br>
+		   <input id="radio_18" type="radio" value="1" name="e">
+		   <label for="radio_18"> 2. заполнен пылью и газом  </label></br>
+		   <input id="radio_19" type="radio" value="0" name="e">
+		   <label for="radio_19"> 3. заполнен обломками космических аппаратов</label></br>
+		   <input id="radio_20" type="radio" value="0" name="e">
+		   <label for="radio_20"> 4. Марс</label></br>
+		  </div> 
+		  
+		   <div class="choice"> 
+		   <p>6. Угол между направлением на светило с какой-либо точки земной поверхности и направлением из центра Земли называется …</p>
+		   <input id="radio_21" type="radio" value="0" name="f">
+		   <label for="radio_21"> 1. Часовой угол </label></br>
+		   <input id="radio_22" type="radio" value="1" name="f">
+		   <label for="radio_22"> 2. Горизонтальный параллакс </label></br>
+		   <input id="radio_23" type="radio" value="0" name="f">
+		   <label for="radio_23"> 3. Азимут</label></br>
+		   <input id="radio_24" type="radio" value="0" name="f">
+		   <label for="radio_24"> 4. Прямое восхождение</label></br>
+		  </div> 
+		  
+		  <div class="choice"> 
+		   <p>7. Расстояние, с которого средний радиус земной орбиты виден под углом 1 секунда называется …</p>
+		   <input id="radio_25" type="radio" value="0" name="g">
+		   <label for="radio_25"> 1. Астрономическая единица </label></br>
+		   <input id="radio_26" type="radio" value="1" name="g">
+		   <label for="radio_26">2. Парсек</label></br>
+		   <input id="radio_27" type="radio" value="0" name="g">
+		   <label for="radio_27">3. Световой год</label></br>
+		   <input id="radio_28" type="radio" value="0" name="g">
+		   <label for="radio_28">4. Звездная величина</label></br>
+		  </div> 
+		  
+		  <div class="choice" > 
+		   <p>8. Нижняя точка пересечения отвесной линии с небесной сферой называется …</p>
+		   <input id="radio_29" type="radio" value="0" name="h">
+		   <label for="radio_29">1. точках юга</label></br>
+		   <input id="radio_30" type="radio" value="0" name="h">
+		   <label for="radio_30">2. точках севере</label></br>
+		   <input id="radio_31" type="radio" value="0" name="h">
+		   <label for="radio_31">3. зенит</label></br>
+		   <input id="radio_32" type="radio" value="1" name="h">
+		   <label for="radio_32">4. надир</label></br>
+		  </div> 
+		  
+		  <div class="choice" > 
+		   <p>9. Большой круг, плоскость которого перпендикулярна оси мира называется …</p>
+		   <input id="radio_33" type="radio" value="1" name="i">
+		   <label for="radio_33">1. небесный экватор</label></br>
+		   <input id="radio_34" type="radio" value="0" name="i">
+		   <label for="radio_34">2. небесный меридиан</label></br>
+		   <input id="radio_35" type="radio" value="0" name="i">
+		   <label for="radio_35">3. круг склонений</label></br>
+		   <input id="radio_36" type="radio" value="0" name="i">
+		   <label for="radio_36">4. настоящий горизонт</label></br>
+		  </div> 
+		  
+		  <div class="choice" > 
+		   <p>10. Первая экваториальная система небесных координат определяется …</p>
+		   <input id="radio_37" type="radio" value="1" name="j">
+		   <label for="radio_37">1.Годинний угол и склонение</label></br>
+		   <input id="radio_38" type="radio" value="0" name="j">
+		   <label for="radio_38">2. Прямое восхождение и склонение</label></br>
+		   <input id="radio_39" type="radio" value="0" name="j">
+		   <label for="radio_39">3. Азимут и склонение</label></br>
+		   <input id="radio_40" type="radio" value="0" name="j">
+		   <label for="radio_40">4. Азимут и высота</label></br>
+		  </div>
+		  
+		  <div class="choice" > 
+		   <p>11. Большой круг, по которому цент диска Солнца совершает свой видимый летний движение на небесной сфере называется …</p>
+		   <input id="radio_41" type="radio" value="0" name="k">
+		   <label for="radio_41">1. небесный экватор</label></br>
+		   <input id="radio_42" type="radio" value="0" name="k">
+		   <label for="radio_42">2. небесный меридиан</label></br>
+		   <input id="radio_43" type="radio" value="0" name="k">
+		   <label for="radio_43">3. круг склонений</label></br>
+		   <input id="radio_44" type="radio" value="1" name="k">
+		   <label for="radio_44">4. эклиптика </label></br>
+		  </div> 
+		  
+		  <div class="choice" > 
+		   <p>12. Линия вокруг которой вращается небесная сфера называется</p>
+		   <input id="radio_45" type="radio" value="1" name="l">
+		   <label for="radio_45">1. ось мира </label></br>
+		   <input id="radio_46" type="radio" value="0" name="l">
+		   <label for="radio_46">2. вертикаль</label></br>
+		   <input id="radio_47" type="radio" value="0" name="l">
+		   <label for="radio_47">3. полуденная линия</label></br>
+		   <input id="radio_48" type="radio" value="0" name="l">
+		   <label for="radio_48">4. настоящий горизонт</label></br>
+		  </div>
+		  
+		  <div class="choice" > 
+		   <p>13. В каком созвездии находится звезда, имеет координаты α = 5h 20m, δ = + 100</p>
+		   <input id="radio_49" type="radio" value="0" name="m">
+		   <label for="radio_49">1. Телец</label></br>
+		   <input id="radio_50" type="radio" value="0" name="m">
+		   <label for="radio_50">2. Возничий</label></br>
+		   <input id="radio_51" type="radio" value="0" name="m">
+		   <label for="radio_51">3. Заяц</label></br>
+		   <input id="radio_52" type="radio" value="1" name="m">
+		   <label for="radio_52">4. Орион</label></br>
+		  </div>
+		  
+		  <div class="choice" > 
+		   <p>14. Обратное движение точки весеннего равноденствия называется …</p>
+		   <input id="radio_53" type="radio" value="0" name="n">
+		   <label for="radio_53">1. Перигелий</label></br>
+		   <input id="radio_54" type="radio" value="0" name="n">
+		   <label for="radio_54">2. Афелий</label></br>
+		   <input id="radio_55" type="radio" value="1" name="n">
+		   <label for="radio_55">3. Прецессия</label></br>
+		   <input id="radio_56" type="radio" value="0" name="n">
+		   <label for="radio_56">4. Нет правильного ответа</label></br>
+		  </div>
+		  
+		  <div class="choice" > 
+		   <p>15. Самых главных фаз Луны насчитывают …</p>
+		   <input id="radio_57" type="radio" value="0" name="o">
+		   <label for="radio_57">1. две</label></br>
+		   <input id="radio_58" type="radio" value="0" name="o">
+		   <label for="radio_58">2. четыре</label></br>
+		   <input id="radio_59" type="radio" value="0" name="o">
+		   <label for="radio_59">3. шесть</label></br>
+		   <input id="radio_60" type="radio" value="1" name="o">
+		   <label for="radio_60">4. восемь</label></br>
+		  </div>
+		  
+		  <div class="choice" > 
+		   <p>16. Угол который, отсчитывают от точки юга S вдоль горизонта в сторону заката до вертикала светила называют …</p>
+		   <input id="radio_61" type="radio" value="1" name="p">
+		   <label for="radio_61">1. Азимут</label></br>
+		   <input id="radio_62" type="radio" value="0" name="p">
+		   <label for="radio_62">2. Высота</label></br>
+		   <input id="radio_63" type="radio" value="0" name="p">
+		   <label for="radio_63">3. Часовой угол</label></br>
+		   <input id="radio_64" type="radio" value="0" name="p">
+		   <label for="radio_64">4. Склонение</label></br>
+		  </div>
+		  
+		  <div class="choice" > 
+		   <p>17. Квадраты периодов обращения планет относятся как кубы больших полуосей орбит. Это утверждение …</p>
+		   <input id="radio_65" type="radio" value="0" name="q">
+		   <label for="radio_65">1. первый закон Кеплера</label></br>
+		   <input id="radio_66" type="radio" value="0" name="q">
+		   <label for="radio_66">2. второй закон Кеплера</label></br>
+		   <input id="radio_67" type="radio" value="1" name="q">
+		   <label for="radio_67">3. третий закон Кеплера </label></br>
+		   <input id="radio_68" type="radio" value="0" name="q">
+		   <label for="radio_68">4. четвертый закон Кеплера</label></br>
+		  </div>
+		  
+		  <div class="choice" > 
+		   <p>18.Телескоп, у которого объектив представляет собой линзу или систему линз называют …</p>
+		   <input id="radio_69" type="radio" value="0" name="r">
+		   <label for="radio_69">1.Рефлектор</label></br>
+		   <input id="radio_70" type="radio" value="1" name="r"> 
+		   <label for="radio_70">2.Рефрактор</label></br>
+		   <input id="radio_71" type="radio" value="0" name="r">
+		   <label for="radio_71">3. менисковый</label></br>
+		   <input id="radio_72" type="radio" value="0" name="r">
+		   <label for="radio_72">4. Нет правильного ответа.</label></br>
+		  </div>
+		  
+		  <button type="submit" class="protect" id="calc">Проверить</button>
+		</form>
+		
+	  </div>
+	  <script>
+	  calc.onclick = function(){
+    var myform = this.form,
+        chbx = myform['testGeorge'],
+        sum = 0;
+    if(myform.a.value == '1') sum++;
+    if(myform.b.value == '1') sum++;
+	if(myform.c.value == '1') sum++;
+	if(myform.d.value == '1') sum++;
+	if(myform.e.value == '1') sum++;
+	if(myform.f.value == '1') sum++;
+	if(myform.g.value == '1') sum++;
+	if(myform.h.value == '1') sum++;
+	if(myform.i.value == '1') sum++;
+	if(myform.j.value == '1') sum++;
+	if(myform.k.value == '1') sum++;
+	if(myform.l.value == '1') sum++;
+	if(myform.m.value == '1') sum++;
+	if(myform.n.value == '1') sum++;
+	if(myform.o.value == '1') sum++;
+	if(myform.p.value == '1') sum++;
+	if(myform.q.value == '1') sum++;
+	if(myform.r.value == '1') sum++;
+	
+	if(sum>=16)
+	{
+	 number=5;
+	}
+	else if(sum>=12)
+	{
+	 number=4;
+	}
+	else if(sum>=9)
+	{
+	 number=3;
+	}
+	else
+	{
+	 number=2;
+	}
+    name=document.getElementsByTagName("input")[0].value
+	fullname=document.getElementsByTagName("input")[1].value
+	alert(fullname+" "+name+"\n"+"Итого баллов:"+sum+"\nОценка:"+number);
+    
+};
+	  </script>
+   </body>
+</html>

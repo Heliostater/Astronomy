@@ -1,0 +1,152 @@
+
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+*
+{
+	padding:0;
+	margin:0;
+	outline:0;
+}
+
+.background
+{
+	background:url(../../img/kek.png);
+	position:fixed;
+	z-index:-30;
+	width:100%;
+	height:100vh;
+}
+
+a
+{
+	text-decoration:none;
+	color: #8A488A;
+}
+
+#toTop {
+
+
+
+text-align:center;
+padding:5px;
+position:fixed;
+bottom:10px; 
+right:10px;
+cursor:pointer;
+display:none;
+color:#333;
+font-family:verdana;
+font-size:11px;
+}
+
+.link
+{
+	margin-top:20px;
+	float:right;
+}
+
+.link:hover
+{
+	border-bottom:2px solid #8A488A;
+}
+
+.wrapper
+{
+	min-width:1200px;
+	margin:0 auto;
+}
+
+.logo
+{
+	padding-top:20px;
+}
+
+.logo_link
+{
+	width:441px;
+    height:79px;
+	display: block;
+    margin: 0 auto;
+}
+
+.line
+{
+    width: 1200px;
+    height: 5px;
+    margin:0 auto;
+    background: rgba(192, 100, 192, 0.72);
+}
+
+.panel_full
+{
+	width: 1170px;
+    margin: 0 auto;
+    position: relative;
+	text-align:center;
+	padding-bottom:20px;
+}
+
+.panel_full_menu
+{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-around;
+	list-style:none;
+}
+
+.panel_full_menu_list
+{
+    font-size: 32px;
+    font-family: 'Oswald', sans-serif;
+	padding-top:5px;
+}
+
+.panel_full_menu_link:hover
+{
+	border-bottom:2px solid #8A488A;
+}
+
+.select
+{
+	color:gray;
+	cursor:default;
+}
+
+.select:hover
+{
+	border-bottom:none;
+}
+
+.coursive
+{
+	font-style:italic;
+}
+
+.block_article
+{
+	margin:auto;
+	width:1200px;
+	color:#fff;
+	font-size:36px;
+	font-family:'Oswald', sans-serif;
+}
+
+.title
+{
+	margin-top:20px;
+	font-size:45px;
+	
+}
+
+.title_center
+{
+    text-align:center;
+}
+
+.text
+{
+   text-align:justify;
+   margin-top:20px;
+   text-indent:15px;
+   font-size:30px;
+}

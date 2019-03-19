@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+	<title>Дополнительные материалы</title>
+    <link rel="stylesheet" href="control_1.css">
+	<link rel="shortcut icon" href="../../img/favicon.ico">
+  </head>
+  <body>
+    <div class="wrapper">  
+	  <div class="logo">
+	    <a href="../../index.html" class="logo_link"><img src="../../img/logo.png" class="logo_img"></a>
+	  </div>
+	  
+	  <div class="line">
+	  </div>
+	  
+	  <div class="panel">
+	    <div class="panel_full">
+		  <ul class="panel_full_menu">
+		    <li class="panel_full_menu_list"><a href="../../index.html" class="panel_full_menu_link">На главную</a></li>
+			<li class="panel_full_menu_list"><a href="../../theory.html" class="panel_full_menu_link">Теория</a></li>
+			<li class="panel_full_menu_list"><a href="../../add_material.html" class="panel_full_menu_link">Доп.Матер</a></li>
+			<li class="panel_full_menu_list"><a href="../../tests.html" class="panel_full_menu_link">Тесты</li></a>
+			<li class="panel_full_menu_list"><a href="../../practice.html" class="panel_full_menu_link">Практические</li></a>
+			<li class="panel_full_menu_list"><a href="../../about_us.html" class="panel_full_menu_link">О нас</li></a>
+		  </ul>
+		</div>
+	  </div>
+	  
+	  <div class="autho" >
+       <form class="center">
+	      <input type="login" class="btn" placeholder="Введите логин" required></br>
+		  <input type="password" class="btn" placeholder="Введите пароль" required></br>
+          <input type="button" class="protect" value="Войти" onClick="Input()">
+       </form>
+      </div>
+	</div>
+	<script type="text/javascript">
+function Input(){
+var login=document.getElementsByTagName("input")[0].value;
+var password= document.getElementsByTagName("input")[1].value;
+login_ok = false;
+
+if (login=="login" && password=="pass") {
+ login_ok=true;
+ window.location="../practice_1/practice_1.html";
+}
+if (login=="login2" && password=="pass2") {
+ login_ok=true;
+ window.location="forum/index.php";
+}
+
+if (login_ok==false) alert("Неверный логин или пароль!");
+}
+</script>
+   </body>
+</html> 
